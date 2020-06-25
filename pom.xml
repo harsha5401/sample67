@@ -163,18 +163,17 @@
       <version>${spring.version}</version>
       <scope>test</scope>
     </dependency>
-  </dependencies>
-       <dependencies>
-      <dependency>
+          <dependency>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>applicationinsights-web-auto</artifactId>
         <!-- or applicationinsights-web for manual web filter registration -->
         <!-- or applicationinsights-core for bare API -->
         <version>2.5.0</version>
       </dependency>
-    </dependencies>
-
-  <build>
+  </dependencies>
+       
+     
+    <build>
     <finalName>jpetstore</finalName>
     <pluginManagement>
       <plugins>
