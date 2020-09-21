@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: tomcat-java
-        image:  aholddevops.azurecr.io/tomcat_java:v1
+        image: jpetstore.azurecr.io/pakak/jpetstore:v1.12
         ports:
         - containerPort: 8080
 ---
