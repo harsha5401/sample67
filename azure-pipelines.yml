@@ -28,9 +28,8 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-- task: Docker@2
+- task: CopyPublishBuildArtifacts@1
   inputs:
-    containerRegistry: 'docker'
-    repository: 'harsha5401 / dockerci'
-    command: 'buildAndPush'
-    Dockerfile: '**/Dockerfile'
+    Contents: 'build artifact'
+    ArtifactName: 'build'
+    ArtifactType: 'Container'
